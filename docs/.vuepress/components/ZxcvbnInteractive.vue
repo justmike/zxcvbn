@@ -1,7 +1,7 @@
 <template>
   <div class="example">
     <label>
-      <b>Options</b>
+      <b>Options (AAA)</b>
     </label>
     <hr style="width: 100%" />
     <label>
