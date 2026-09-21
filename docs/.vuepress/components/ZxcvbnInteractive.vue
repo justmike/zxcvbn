@@ -61,6 +61,13 @@
           Use pwned matcher
         </label>
       </li>
+ 
+      <li>
+        <label>
+          <input v-model="useTrillionGuessesPerSec" type="text" />
+          Include 1 trillion guesses per second stat
+        </label>
+      </li>
     </ul>
     <hr style="width: 100%" />
     <label>
@@ -99,6 +106,7 @@ export default {
       useDictionaries: true,
       useDebounce: true,
       usePwned: true,
+      useTrillionGuessesPerSec: true,
       useLevenshteinDistance: true,
       debounce: debounce(this.useZxcvbn, 200),
       userInputs: '',
@@ -217,6 +225,10 @@ export default {
     },
     useLevenshteinDistance() {
       this.password = ''
+      this.setOptions()
+    },
+    useTrillionGuessesPerSec() {
+      this.trillionGuessesPerSec = ''
       this.setOptions()
     },
     usePwned(newValue) {
