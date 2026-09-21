@@ -34,3 +34,12 @@ jobs:
 
       - name: Build source
         run: yarn build
+
+      # This step will only execute on successful build of master
+      # This deploys gh-pages to https://justmike.github.io/zxcvbn/
+      - name: Trigger pages-build-deployment build
+        run: |
+          curl -X POST \
+            -H "Authorization: token ${{ secrets. ZXCVBN_GH_PAGES_TRIGGER_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/repos/${{ github.repository }}/pages/builds
