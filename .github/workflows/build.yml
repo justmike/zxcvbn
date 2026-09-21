@@ -8,7 +8,8 @@ on:
     branches: [master]
   pull_request:
     branches: [master]
-
+  workflow_dispatch:  # Adds a "Run workflow" button drop-down for manual triggering
+  
 jobs:
   build:
     name: Run build
