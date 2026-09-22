@@ -9,7 +9,11 @@ on:
   pull_request:
     branches: [master]
   workflow_dispatch:  # Adds a "Run workflow" button drop-down for manual triggering
-  
+
+# Grant write permissions to fix "Resource not accessible" errors
+permissions:
+  contents: write
+
 jobs:
   build:
     name: Run build
