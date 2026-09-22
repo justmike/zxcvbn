@@ -7,6 +7,9 @@ actions:
 - text: Introduction
   link: /guide/
   type: secondary
+- text: Demo
+  link: /demo/
+  type: secondary
 features:
   - title: Password strength
     details: Estimate your password strength
@@ -19,5 +22,5 @@ features:
   - title: Typescript
     details: Completely written in Typescript to get your types rolling
 
-footer: zxcvbn-ts
+footer: zxcvbn-ts (justmike - README.md)
 ---
