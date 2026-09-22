@@ -11,7 +11,7 @@ import pkg from '../../package.json'
 export default defineUserConfig({
   title: pkg.name,
   description: pkg.description,
-  base: '/zxcvbn/',
+  base: '/justmike/',  //  base: '/zxcvbn/',
   lang: 'en-US',
   plugins: [
     registerComponentsPlugin({
