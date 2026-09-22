@@ -1,7 +1,7 @@
 <template>
   <div class="example">
     <label>
-      <b>Options (BBB)</b>
+      <b>Options (CCC)</b>
     </label>
     <hr style="width: 100%" />
     <label>
