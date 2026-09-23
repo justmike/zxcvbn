@@ -1,17 +1,17 @@
 {
-  "name": "@justmike/core",
+  "name": "@zxcvbn-ts/core",
   "version": "4.2.0",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
-  "description": "Realistic password strength estimation written in typescript",
+  "description": "Realistic password strength estimation written in typescript - renaming all zxcvbn-ts to justmike causes docs build failure",
   "license": "MIT",
-  "homepage": "https://github.com/justmike/zxcvbn",
+  "homepage": "https://github.com/zxcvbn-ts/zxcvbn",
   "repository": {
     "type": "git",
-    "url": "https://github.com/justmike/zxcvbn.git"
+    "url": "https://github.com/zxcvbn-ts/zxcvbn.git"
   },
-  "author": "justmike",
+  "author": "zxcvbn-ts",
   "files": [
     "dist",
     "src"
