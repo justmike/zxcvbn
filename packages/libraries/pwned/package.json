@@ -1,17 +1,17 @@
 {
-  "name": "@justmike/matcher-pwned",
+  "name": "@zxcvbn-ts/matcher-pwned",
   "version": "4.1.3",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
-  "description": "HaveIBeenPwned Matcher for justmike/zxcvbn",
+  "description": "HaveIBeenPwned Matcher for zxcvbn-ts/zxcvbn",
   "license": "MIT",
-  "homepage": "https://github.com/justmike/zxcvbn",
+  "homepage": "https://github.com/zxcvbn-ts/zxcvbn",
   "repository": {
     "type": "git",
-    "url": "https://github.com/justmike/zxcvbn.git"
+    "url": "https://github.com/zxcvbn-ts/zxcvbn.git"
   },
-  "author": "justmike",
+  "author": "zxcvbn-ts",
   "files": [
     "dist",
     "src"
