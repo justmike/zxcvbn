@@ -25,14 +25,17 @@ jobs:
       - name: Checkout Repository
          # use a pinned commit hash for security
 #        uses: actions/checkout@v4
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+#        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 #        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+
 
       - name: Setup Node.js
          # use a pinned commit hash for security
 #        uses: actions/setup-node@v4
-        uses: actions/setup-node@3922559a99c419c810438d7c671a41a15ec9c580 # v4.1.0
+#        uses: actions/setup-node@3922559a99c419c810438d7c671a41a15ec9c580 # v4.1.0
 #        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: 18
           cache: 'yarn'
@@ -46,7 +49,8 @@ jobs:
       - name: Upload Static Web Bundle Artifact
          # use a pinned commit hash for security
 #        uses: actions/upload-pages-artifact@v3
-        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dee4966285e9 # v3.0.1
+#        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dee4966285e9 # v3.0.1
+        uses: actions/upload-pages-artifact@fc324d3 # v5.0.0 (short hash from tag release)
         with:
           path: 'docs/.vuepress/dist'
 
@@ -54,4 +58,5 @@ jobs:
         id: deployment
          # use a pinned commit hash for security
 #        uses: actions/deploy-pages@v4
-        uses: actions/deploy-pages@d6db90164add5ee842f90874100b8529537d1d55 # v4.0.5
+#        uses: actions/deploy-pages@d6db90164add5ee842f90874100b8529537d1d55 # v4.0.5
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
