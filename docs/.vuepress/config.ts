@@ -32,5 +32,7 @@ export default defineUserConfig({
     // displayAllHeaders: true,
     sidebarDepth: 3,
     docsBranch: 'master',
+    // for: Settings: Build and deploy with Source as "GitHub Actions"
+    docsRepo: 'justmike/zxcvbn',
   }),
 })
